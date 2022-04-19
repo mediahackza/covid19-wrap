@@ -1,0 +1,251 @@
+province,month,year,monthly_deaths
+Eastern Cape,April,2020,11
+Free State,April,2020,4
+Gauteng,April,2020,10
+KwaZulu Natal,April,2020,30
+Limpopo,April,2020,2
+Mpumalanga,April,2020,0
+North West,April,2020,0
+Northern Cape,April,2020,0
+Unknown,April,2020,0
+Western Cape,April,2020,41
+Eastern Cape,April,2021,196
+Free State,April,2021,207
+Gauteng,April,2021,334
+KwaZulu Natal,April,2021,187
+Limpopo,April,2021,50
+Mpumalanga,April,2021,50
+North West,April,2021,247
+Northern Cape,April,2021,70
+Unknown,April,2021,0
+Western Cape,April,2021,163
+Eastern Cape,August,2020,1188
+Free State,August,2020,555
+Gauteng,August,2020,1557
+KwaZulu Natal,August,2020,1336
+Limpopo,August,2020,135
+Mpumalanga,August,2020,263
+North West,August,2020,167
+Northern Cape,August,2020,100
+Unknown,August,2020,0
+Western Cape,August,2020,843
+Eastern Cape,August,2021,1053
+Free State,August,2021,589
+Gauteng,August,2021,1799
+KwaZulu Natal,August,2021,1942
+Limpopo,August,2021,464
+Mpumalanga,August,2021,159
+North West,August,2021,800
+Northern Cape,August,2021,250
+Unknown,August,2021,0
+Western Cape,August,2021,3192
+Eastern Cape,December,2020,2678
+Free State,December,2020,249
+Gauteng,December,2020,540
+KwaZulu Natal,December,2020,1051
+Limpopo,December,2020,86
+Mpumalanga,December,2020,30
+North West,December,2020,28
+Northern Cape,December,2020,77
+Unknown,December,2020,0
+Western Cape,December,2020,2195
+Eastern Cape,December,2021,180
+Free State,December,2021,77
+Gauteng,December,2021,421
+KwaZulu Natal,December,2021,273
+Limpopo,December,2021,63
+Mpumalanga,December,2021,20
+North West,December,2021,50
+Northern Cape,December,2021,72
+Unknown,December,2021,0
+Western Cape,December,2021,146
+Eastern Cape,February,2021,636
+Free State,February,2021,534
+Gauteng,February,2021,1480
+KwaZulu Natal,February,2021,1032
+Limpopo,February,2021,620
+Mpumalanga,February,2021,274
+North West,February,2021,234
+Northern Cape,February,2021,99
+Unknown,February,2021,0
+Western Cape,February,2021,920
+Eastern Cape,February,2022,183
+Free State,February,2022,158
+Gauteng,February,2022,142
+KwaZulu Natal,February,2022,184
+Limpopo,February,2022,254
+Mpumalanga,February,2022,2297
+North West,February,2022,224
+Northern Cape,February,2022,683
+Unknown,February,2022,0
+Western Cape,February,2022,194
+Eastern Cape,January,2021,3338
+Free State,January,2021,548
+Gauteng,January,2021,2649
+KwaZulu Natal,January,2021,4184
+Limpopo,January,2021,677
+Mpumalanga,January,2021,344
+North West,January,2021,356
+Northern Cape,January,2021,191
+Unknown,January,2021,0
+Western Cape,January,2021,3408
+Eastern Cape,January,2022,919
+Free State,January,2022,252
+Gauteng,January,2022,322
+KwaZulu Natal,January,2022,737
+Limpopo,January,2022,95
+Mpumalanga,January,2022,359
+North West,January,2022,71
+Northern Cape,January,2022,56
+Unknown,January,2022,0
+Western Cape,January,2022,1137
+Eastern Cape,July,2020,1286
+Free State,July,2020,145
+Gauteng,July,2020,1819
+KwaZulu Natal,July,2020,677
+Limpopo,July,2020,57
+Mpumalanga,July,2020,71
+North West,July,2020,74
+Northern Cape,July,2020,28
+Unknown,July,2020,0
+Western Cape,July,2020,1191
+Eastern Cape,July,2021,915
+Free State,July,2021,702
+Gauteng,July,2021,4035
+KwaZulu Natal,July,2021,908
+Limpopo,July,2021,752
+Mpumalanga,July,2021,190
+North West,July,2021,727
+Northern Cape,July,2021,359
+Unknown,July,2021,0
+Western Cape,July,2021,2778
+Eastern Cape,June,2020,340
+Free State,June,2020,1
+Gauteng,June,2020,183
+KwaZulu Natal,June,2020,74
+Limpopo,June,2020,7
+Mpumalanga,June,2020,7
+North West,June,2020,6
+Northern Cape,June,2020,0
+Unknown,June,2020,0
+Western Cape,June,2020,1356
+Eastern Cape,June,2021,221
+Free State,June,2021,685
+Gauteng,June,2021,1663
+KwaZulu Natal,June,2021,192
+Limpopo,June,2021,139
+Mpumalanga,June,2021,65
+North West,June,2021,353
+Northern Cape,June,2021,274
+Unknown,June,2021,0
+Western Cape,June,2021,549
+Eastern Cape,March,2020,0
+Free State,March,2020,1
+Gauteng,March,2020,1
+KwaZulu Natal,March,2020,2
+Limpopo,March,2020,0
+Mpumalanga,March,2020,0
+North West,March,2020,0
+Northern Cape,March,2020,0
+Unknown,March,2020,0
+Western Cape,March,2020,1
+Eastern Cape,March,2021,69
+Free State,March,2021,398
+Gauteng,March,2021,640
+KwaZulu Natal,March,2021,589
+Limpopo,March,2021,327
+Mpumalanga,March,2021,84
+North West,March,2021,311
+Northern Cape,March,2021,144
+Unknown,March,2021,0
+Western Cape,March,2021,291
+Eastern Cape,March,2022,63
+Free State,March,2022,44
+Gauteng,March,2022,29
+KwaZulu Natal,March,2022,44
+Limpopo,March,2022,34
+Mpumalanga,March,2022,18
+North West,March,2022,12
+Northern Cape,March,2022,15
+Unknown,March,2022,0
+Western Cape,March,2022,54
+Eastern Cape,May,2020,71
+Free State,May,2020,3
+Gauteng,May,2020,22
+KwaZulu Natal,May,2020,20
+Limpopo,May,2020,1
+Mpumalanga,May,2020,0
+North West,May,2020,1
+Northern Cape,May,2020,1
+Unknown,May,2020,0
+Western Cape,May,2020,461
+Eastern Cape,May,2021,106
+Free State,May,2021,487
+Gauteng,May,2021,572
+KwaZulu Natal,May,2021,124
+Limpopo,May,2021,195
+Mpumalanga,May,2021,56
+North West,May,2021,208
+Northern Cape,May,2021,218
+Unknown,May,2021,0
+Western Cape,May,2021,190
+Eastern Cape,November,2020,957
+Free State,November,2020,412
+Gauteng,November,2020,288
+KwaZulu Natal,November,2020,118
+Limpopo,November,2020,48
+Mpumalanga,November,2020,9
+North West,November,2020,97
+Northern Cape,November,2020,47
+Unknown,November,2020,0
+Western Cape,November,2020,283
+Eastern Cape,November,2021,61
+Free State,November,2021,93
+Gauteng,November,2021,86
+KwaZulu Natal,November,2021,32
+Limpopo,November,2021,40
+Mpumalanga,November,2021,7
+North West,November,2021,145
+Northern Cape,November,2021,122
+Unknown,November,2021,0
+Western Cape,November,2021,80
+Eastern Cape,October,2020,557
+Free State,October,2020,479
+Gauteng,October,2020,477
+KwaZulu Natal,October,2020,550
+Limpopo,October,2020,67
+Mpumalanga,October,2020,85
+North West,October,2020,89
+Northern Cape,October,2020,59
+Unknown,October,2020,0
+Western Cape,October,2020,179
+Eastern Cape,October,2021,296
+Free State,October,2021,285
+Gauteng,October,2021,211
+KwaZulu Natal,October,2021,170
+Limpopo,October,2021,52
+Mpumalanga,October,2021,38
+North West,October,2021,65
+Northern Cape,October,2021,82
+Unknown,October,2021,0
+Western Cape,October,2021,352
+Eastern Cape,September,2020,228
+Free State,September,2020,319
+Gauteng,September,2020,652
+KwaZulu Natal,September,2020,536
+Limpopo,September,2020,189
+Mpumalanga,September,2020,179
+North West,September,2020,115
+Northern Cape,September,2020,78
+Unknown,September,2020,0
+Western Cape,September,2020,289
+Eastern Cape,September,2021,1001
+Free State,September,2021,394
+Gauteng,September,2021,669
+KwaZulu Natal,September,2021,1033
+Limpopo,September,2021,188
+Mpumalanga,September,2021,100
+North West,September,2021,331
+Northern Cape,September,2021,188
+Unknown,September,2021,0
+Western Cape,September,2021,1461

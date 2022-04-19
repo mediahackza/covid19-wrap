@@ -1,7 +1,10 @@
 <script>
-  let showNotes = false
+  let showNotes = true
   import Legend from './Legend.svelte'
   import Title from './Title.svelte'
+  import Maps from './Maps.svelte'
+  import Excess from './Excess.svelte'
+  import Vaccinations from './Vaccinations.svelte'
   import { fills } from './fills.js'
   let dates = [
     { date: '01-03-2020', month: 'Mar 2020' },
@@ -16,29 +19,30 @@
   ]
   let notes = [
     {
-      date: '06-06-2020',
-      note: '6 June 2020',
+      date: '10-07-2020',
+      note: '10 July 2020',
       line: true,
-      tests: 40797,
+      tests: 45000,
     },
     {
-      date: '15-04-2021',
-      note: '15 April 2021',
-      line: false,
-      tests: 43550,
+      date: '14-01-2021',
+      note: '14 January 2021',
+      line: true,
+      tests: 60000,
     },
 
     {
-      date: '23-11-2021',
-      note: '23 November 2021',
+      date: '03-07-2021',
+      note: '3 July 2021',
       line: true,
-      tests: 40729,
+      tests: 75729,
     },
+
     {
       date: '11-12-2021',
       note: '11 December 2021',
-      line: false,
-      tests: 104831,
+      line: true,
+      tests: 90000,
     },
   ]
 
@@ -108,14 +112,14 @@
 <main>
   <Title />
   <Legend />
-  <div class="tooltip">Tooltip</div>
+  <!-- <div class="tooltip">Tooltip</div> -->
   <div class="chart" bind:clientWidth={width} bind:clientHeight={height}>
-    <div
+    <!-- <div
       class="controls {showNotes ? 'controls-on' : ''}"
       on:click={() => (showNotes = !showNotes)}
     >
       Show Notes
-    </div>
+    </div> -->
     <svg {width} {height}>
       {#each dates as date}
         <text x={scaleX(date.date) - 10} y="30" class="dates">{date.month}</text
@@ -171,6 +175,15 @@
       <g id="events">
         {#each notes as note}
           {#if note.line && showNotes}
+            <path
+              d="M92.3315 0.918335L184.194 160.03H0.468575L92.3315 0.918335Z"
+              transform="
+              translate({scaleX(dateParse(note.date)) + 8} {scaleY(note.tests) -
+                140})
+              rotate(90)
+              scale(0.05)"
+              style="fill: #fff;"
+            />
             <line
               x1={scaleX(dateParse(note.date))}
               y1={scaleY(note.tests) - 90}
@@ -179,8 +192,8 @@
               class="note-line"
             />
             <text
-              x={scaleX(dateParse(note.date)) - 2}
-              y={scaleY(note.tests) - 145}
+              x={scaleX(dateParse(note.date)) + 12}
+              y={scaleY(note.tests) - 133}
               class="notes">{note.note}</text
             >
           {/if}
@@ -195,6 +208,16 @@
       </g>
     </svg>
   </div>
+
+  <!-- MAPS -->
+
+  <Maps />
+
+  <!-- Excess Deaths -->
+  <Excess />
+
+  <!-- Vaccinations -->
+  <Vaccinations />
 </main>
 
 <style>
@@ -205,11 +228,13 @@
     width: 100%;
     /* max-width: 1200px; */
     margin: auto;
+    max-width: 1100px;
   }
   .chart {
-    width: 90%;
+    width: 100%;
     height: 90vh;
-    max-height: 600px;
+    max-height: 550px;
+    min-height: 500px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -264,7 +289,7 @@
     opacity: 0.4;
   }
   .triangle:hover {
-    opacity: 1;
+    /* opacity: 1; */
   }
   .dates {
     fill: gray;
@@ -286,11 +311,18 @@
     stroke-width: 5px;
     stroke: #131313;
     /* font-weight: 700; */
+    /* display: none; */
   }
   .note-line {
     stroke: lightgray;
 
     stroke-width: 0.5px;
     shape-rendering: crispEdges;
+  }
+
+  @media only screen and (max-width: 600px) {
+    main {
+      width: 90%;
+    }
   }
 </style>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Condensed&family=Roboto:wght@400;700&family=Shadows+Into+Light&family=Titillium+Web:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=PT+Serif:wght@400;700&family=Roboto+Condensed:wght@300;700&family=Roboto:wght@400;700&family=Shadows+Into+Light&family=Titillium+Web:wght@400;700&display=swap');
 
 html,
 body {
@@ -8,7 +8,7 @@ body {
 }
 
 body {
-  color: #333;
+  color: rgb(196, 196, 163);
   margin: 0;
   padding: 8px;
   box-sizing: border-box;
@@ -16,20 +16,18 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   /* background: rgb(145, 145, 145); */
   background: rgb(19, 19, 19);
+  background: rgb(24, 24, 24);
 }
 
 a {
-  color: rgb(0, 100, 200);
-  text-decoration: none;
+ color: inherit;
+  text-decoration: underline;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-a:visited {
-  color: rgb(0, 80, 160);
-}
 
 label {
   display: block;
@@ -80,4 +78,92 @@ button:focus {
   font-size: 0.8rem;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   border: solid 1px gray;
+}
+
+.sub-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 100%;
+  text-align: center;
+  color: gray;
+  margin-top: 10px;
+}
+
+.section-title { 
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 100%; 
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
+
+.section-sub-title { 
+  color: rgb(166, 166, 166);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 100%; 
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-family: 'Roboto',Arial, Helvetica, sans-serif;
+}
+
+.legend-block {
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  font-family: 'Inter', 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  border-right: dashed 1px gray;
+  padding-right: 20px;
+
+}
+.legend-text-title  { 
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  display: block !important;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  letter-spacing: 0px;;
+}
+.legend-no-border { 
+  border: none;
+}
+
+text { 
+  /* font-size:3rem !important; */
+  fill: gray;
+  font-family: Arial;
+  stroke: none !important;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-family: 'INter', Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+svg text { 
+  text-transform: uppercase;
+  
+}
+.y-axis { 
+  text-anchor : end;
+ 
+}
+.grid-line {
+  stroke: rgb(95, 95, 95);
+  stroke-width: 0.03rem;
+  stroke-dasharray: 5, 5;
+  shape-rendering: crispEdges;
+}
+.grid-line-bold { 
+  stroke-width: 2px;
+  stroke-dasharray: 5,5;
+  stroke: gray;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .legend-block {
+    border-right: 0px !important;
+    padding-right: 0px !important;
+  }
 }
