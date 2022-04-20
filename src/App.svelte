@@ -17,34 +17,35 @@
     { date: '01-12-2021', month: 'Dec 2021' },
     { date: '01-03-2022', month: 'Mar 2022' },
   ]
-  let notes = [
-    {
-      date: '10-07-2020',
-      note: '10 July 2020',
-      line: true,
-      tests: 45000,
-    },
-    {
-      date: '14-01-2021',
-      note: '14 January 2021',
-      line: true,
-      tests: 60000,
-    },
 
-    {
-      date: '03-07-2021',
-      note: '3 July 2021',
-      line: true,
-      tests: 75729,
-    },
+  // let notes = [
+  //   {
+  //     date: '10-07-2020',
+  //     note: '10 July 2020',
+  //     line: true,
+  //     tests: 45000,
+  //   },
+  //   {
+  //     date: '14-01-2021',
+  //     note: '14 January 2021',
+  //     line: true,
+  //     tests: 60000,
+  //   },
 
-    {
-      date: '11-12-2021',
-      note: '11 December 2021',
-      line: true,
-      tests: 90000,
-    },
-  ]
+  //   {
+  //     date: '03-07-2021',
+  //     note: '3 July 2021',
+  //     line: true,
+  //     tests: 75729,
+  //   },
+
+  //   {
+  //     date: '11-12-2021',
+  //     note: '11 December 2021',
+  //     line: true,
+  //     tests: 90000,
+  //   },
+  // ]
 
   import { fly, fade, scale, slide, blur } from 'svelte/transition'
   let height = 400
@@ -172,7 +173,7 @@
       {/each}
 
       <!-- Ntable events -->
-      <g id="events">
+      <!-- <g id="events">
         {#each notes as note}
           {#if note.line && showNotes}
             <path
@@ -205,7 +206,7 @@
             >
           {/if}
         {/each}
-      </g>
+      </g> -->
     </svg>
   </div>
 

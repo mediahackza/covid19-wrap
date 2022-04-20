@@ -7,7 +7,7 @@
   import { onMount } from 'svelte'
   export let mapData
   export let mapMonth = 'Not Defined'
-  $: scale = d3.scaleLinear().domain([100, maxDeaths]).range([0, 8])
+  $: scale = d3.scaleLinear().domain([100, 5000]).range([0, 6])
 
   let ec = '#000'
   let fs = '#000'

@@ -99,7 +99,7 @@
         <div class="bar" style="background: {fills2[4]};" />
         <div class="bar" style="background: {fills2[5]};" />
         <div class="bar" style="background: {fills2[6]};" />
-        <div class="bar" style="background: {fills2[7]};" />
+        <!-- <div class="bar" style="background: {fills2[7]};" /> -->
 
         <div class="bar bar-text">&lang;100</div>
         <div class="bar bar-text">100+</div>
@@ -108,7 +108,7 @@
         <div class="bar bar-text" />
         <div class="bar bar-text" />
         <div class="bar bar-text" />
-        <div class="bar bar-text" />
+        <!-- <div class="bar bar-text" /> -->
         <div class="bar bar-text">4,000+</div>
       </div>
     </div>
@@ -202,7 +202,7 @@
     margin-top: 20px;
     width: 400px;
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(8, 1fr);
   }
   .bar {
     width: 100%;

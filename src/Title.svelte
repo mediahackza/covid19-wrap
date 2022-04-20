@@ -2,7 +2,7 @@
   <div class="title">
     <div class="title-inner">Two years of Coronavirus in South Africa</div>
   </div>
-  <div class="section-sub-title">7 March 2020 &mdash; 7 March 2022</div>
+  <div class="section-sub-title">March 2020 &mdash; March 2022</div>
   <div class="header-inner" />
 </div>
 

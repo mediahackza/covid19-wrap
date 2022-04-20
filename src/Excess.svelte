@@ -66,13 +66,15 @@
   <div class="legend legend-excess">
     <div />
     <div class="legend-block legend-no-border">
-      Officially, 100,000 people died of Covid-related causes over the past two
-      years. But in reality many more are likely to have died as a result of the
-      pandemic. One of the most common measures of this are what is known as
-      "excess deaths". Excess deaths are those deaths that are in excess of
-      predicted numbers of deaths. The SA Medical Research Council regularly
-      releases these numbers which indicate significantly higher numbers of
-      deaths, most of which are likely to be Covid-related.
+      Officially, about 100,000 people died of Covid-related causes over the
+      past two years, however the real death toll may be as much as three times
+      that. The SA Medical Research Council (SAMRC) estimates that there were <a
+        href="https://www.samrc.ac.za/reports/report-weekly-deaths-south-africa"
+        target="_blank">as many as 300,000 "excess deaths"</a
+      > over the past two years. Excess deaths are the number of deaths recorded
+      above the typical numbers of deaths for a given year based on historical data
+      which the SAMRC calculates from the deaths recorded on the National Population
+      Register.
     </div>
   </div>
 

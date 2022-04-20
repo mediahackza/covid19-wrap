@@ -58,23 +58,6 @@
 
   <div class="vaccinations-chart" bind:clientWidth={width}>
     <svg {width} {height}>
-      <defs>
-        <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop
-            offset="0%"
-            style="stop-color:rgb(255, 105, 180, 0.3);stop-opacity:1"
-          />
-          <stop offset="100%" style="stop-color:#3c5bf100;stop-opacity:1" />
-        </linearGradient>
-
-        <linearGradient id="grad3" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop
-            offset="0%"
-            style="stop-color:rgb(255, 105, 180, 0.9);stop-opacity:1"
-          />
-          <stop offset="100%" style="stop-color:#00000050;stop-opacity:1" />
-        </linearGradient>
-      </defs>
       <line
         x1="40"
         y1={scaleY(50000)}
@@ -135,7 +118,11 @@
           y={scaleY(v.daily)}
         />
 
-        <path d={line(vaccinations)} class="average-line" />
+        <path
+          d={line(vaccinations)}
+          class="average-line"
+          style="transform: translate(0, -2px);"
+        />
       {/each}
       <text x="40" y={scaleY(50000) + 4} class="y-axis">50k</text>
       <text x="40" y={scaleY(100000) + 4} class="y-axis">100k</text>
@@ -190,15 +177,15 @@
       </text>
 
       <line
-        x1={scaleX(dateParseTwo('2021-05-01'))}
+        x1={scaleX(dateParseTwo('2021-02-24'))}
         y1={height - 35}
-        x2={scaleX(dateParseTwo('2021-05-01'))}
+        x2={scaleX(dateParseTwo('2021-02-24'))}
         y2={height - 125}
         class="marker-line"
       />
 
       <text
-        x={scaleX(dateParseTwo('2021-05-01')) + 5}
+        x={scaleX(dateParseTwo('2021-02-24')) + 5}
         y={height - 120}
         class="date-labels"
       >

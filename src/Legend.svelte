@@ -21,6 +21,10 @@
       target="_blank">detailed data on coronavirus</a
     > in South Africa.
   </p>
+  <div class="credits">
+    <span class="bold">Design & Development</span>: Alastair Otter &nbsp;
+    <span class="bold">Data</span>: Media Hack Collective
+  </div>
 </div>
 
 <div class="four-waves">
@@ -45,6 +49,11 @@
       in the second wave. This is very different to the fourth wave which saw
       signficant testing and an increase in daily cases but relatively low
       numbers of daily deaths.
+    </p>
+    <p class="footnote">
+      Note: The dates for cases and deaths are the dates on which they were
+      reported by the dpartment of health and not cessarily the exact date of
+      test or death.
     </p>
   </div>
   <div class="legend-block legend-center legend-no-border">
@@ -203,6 +212,20 @@
 </div>
 
 <style>
+  .bold {
+    font-weight: 700;
+    color: #fff;
+  }
+  .credits {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    /* color: #fff; */
+    font-weight: 300;
+    font-size: 0.8rem;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+  }
   .four-waves {
     border-top: solid 1px gray;
   }
@@ -305,6 +328,11 @@
     opacity: 0.6;
     stroke: #000;
     stroke-width: 3px;
+  }
+  .footnote {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: gray;
   }
 
   @media only screen and (max-width: 600px) {
