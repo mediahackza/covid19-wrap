@@ -192,11 +192,49 @@
       <text class="x-axis" x={scaleX(dateParse('2021-12-25'))} y={height + 20}>
         25 Dec 2021</text
       >
+
+      <!-- Labels -->
+      <line
+        x1="90"
+        x2="140"
+        y1={height - 50}
+        y2={height - 50}
+        class="predicted-legend">Predicted Deaths</line
+      >
+      <text x="150" y={height - 45} class="on-chart-label"
+        >Predicted Deaths</text
+      >
+
+      <text
+        x={scaleX(dateParse('2020-12-15'))}
+        y={100}
+        class="on-chart-label weekly-deaths">Weekly Deaths</text
+      >
     </svg>
   </div>
 </div>
 
 <style>
+  .predicted-legend {
+    stroke-width: 2px;
+    stroke: #fff;
+    stroke-dasharray: 6, 3;
+  }
+  .on-chart-label {
+    fill: #fff;
+    font-weight: 700;
+    font-size: 0.8rem;
+    paint-order: stroke;
+    stroke-width: 5px;
+    stroke: #000;
+  }
+  .weekly-deaths {
+    fill: hotpink !important;
+    paint-order: stroke;
+    stroke-width: 5px;
+    stroke: #000;
+    text-anchor: end;
+  }
   .x-grid {
     stroke: rgba(182, 182, 182, 0.749);
     stroke: #181818;
@@ -265,7 +303,7 @@
   }
   .excess-prediction {
     stroke-dasharray: 6, 3;
-    stroke-width: 1px;
+    stroke-width: 2px;
     stroke: #fff;
     fill: none;
     /* stroke: none; */

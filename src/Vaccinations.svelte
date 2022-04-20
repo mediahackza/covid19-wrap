@@ -35,11 +35,10 @@
 
   <div class="legend legend-vaccinations">
     <div class="legend-block">
-      On 5 March 2020 South Africa recorded the first positive Covid-19 cases
-      was recorded in South Africa. The first recorded deaths was XXXX days
-      later on XX March 2020 in KwaZulu-Natal. The chart below visualises two
-      years of the pandemic in South African from 7 March 2020 through to 7
-      March 2022.
+      South Africa's first Covid-19 vaccinations started on 18 February 2021
+      with the Sisonke trial, which used the Johnson & Johnson vaccine. The
+      official vaccination rollout started on 17 May 2021 with those over 60
+      years old.
     </div>
     <div class="legend-block legend-no-border">
       <div class="vaccinations-legend">
@@ -63,7 +62,7 @@
         y1={scaleY(50000)}
         x2={width}
         y2={scaleY(50000)}
-        class="grid-line grid-line-bold"
+        class="grid-line"
       />
 
       <line
@@ -71,7 +70,7 @@
         y1={scaleY(100000)}
         x2={width}
         y2={scaleY(100000)}
-        class="grid-line grid-line-bold"
+        class="grid-line"
       />
       <line
         x1="40"
@@ -160,6 +159,22 @@
       >
         27 Aug 2021
       </text>
+
+      <line
+        x1={scaleX(dateParseTwo('2021-05-17'))}
+        y1={height - 45}
+        x2={scaleX(dateParseTwo('2021-05-17'))}
+        y2={height - 150}
+        class="marker-line"
+      />
+      <text
+        x={scaleX(dateParseTwo('2021-05-17')) + 5}
+        y={height - 145}
+        class="date-labels"
+      >
+        17 May 2021
+      </text>
+
       <line
         x1={scaleX(dateParseTwo('2022-01-01'))}
         y1={height - 50}
@@ -189,7 +204,7 @@
         y={height - 120}
         class="date-labels"
       >
-        1 Jan 2021
+        24 Feb 2021
       </text>
     </svg>
   </div>
