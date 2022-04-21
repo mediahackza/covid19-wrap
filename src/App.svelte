@@ -232,25 +232,27 @@
         action="https://www.createsend.com/t/subscribeerror?description="
         method="post"
         data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1AAA5D68D26FD222ECE64C6A563A9BF339160E857807618A1E6614A43A746C409629B4C258EC846CC82657DA43FB662EAD"
+        _lpchecked="1"
       >
         <input
           autocomplete="Email"
           aria-label="Email"
-          class="js-cm-email-input qa-input-email"
+          class="js-cm-email-input qa-input-email top-newsletter"
           id="fieldEmail"
           maxlength="200"
           name="cm-jtdujtk-jtdujtk"
           required=""
           type="email"
-          placeholder="Email Address"
+          placeholder="Your Email Address"
         /><input
           aria-label="Signup source"
           id="fieldjthyqu"
           maxlength="200"
           name="cm-f-jthyqu"
           type="hidden"
-          value="Covid Wrap"
-        /><button type="submit">Subscribe</button>
+          value="covid-wrap"
+        />
+        <button class="top-submit-button">Subscribe</button>
       </form>
       <script
         type="text/javascript"

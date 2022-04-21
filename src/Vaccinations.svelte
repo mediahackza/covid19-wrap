@@ -222,7 +222,7 @@
         24 Feb 2021
       </text>
 
-      <path d={lineVaxxed(vaxxed)} class="vax-line" />
+      <!-- <path d={lineVaxxed(vaxxed)} class="vax-line" /> -->
     </svg>
   </div>
 </div>
