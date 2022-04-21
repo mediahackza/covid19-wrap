@@ -275,10 +275,17 @@
         <a href="https://twitter.com/outlierafrica"
           ><img src="/twitter.svg" alt="twitter-link" /> @outlierafrica</a
         >
-        &nbsp;
-        <a href="https://twitter.com/alastairotter"
-          ><img src="/twitter.svg" alt="twitter-link" /> @alastairotter</a
+      </div>
+      <div class="cta-text cta-small">
+        Every effort has been made to ensure that the data and information in
+        this story is accurate. Please let me know if you find anything I've
+        missed. Or just tell me what you thought of this piece. You can find me
+        on <a href="https://twitter.com/alastairotter" target="_blank"
+          >Twitter</a
         >
+        or email me:
+        <a href="mailto:alastair@mediahack.co.za">alastair@mediahack.co.za</a>.
+        I'd love to hear from you.
       </div>
     </div>
   </div>
@@ -446,6 +453,11 @@
   .social img {
     transform: translate(0px, 3px);
     width: 30px;
+  }
+  .cta-small {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    text-transform: initial;
   }
   @media only screen and (max-width: 600px) {
     main {
