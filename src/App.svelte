@@ -220,11 +220,22 @@
   <!-- Vaccinations -->
   <Vaccinations />
 
+  <div class="social">
+    If you enjoyed this please share: <br />
+    <a
+      href="https://twitter.com/intent/tweet?text=A%20visualisation%20of%20two%20years%20of%20Covid%20in%20South%20Africa%20by%20@alastairotter%20.%20https://covid.theoutlier.co.za%20#ddj"
+      target="_blank"><img src="/twitter.svg" alt="Share to Twitter" /></a
+    >&nbsp;<a
+      href="https://www.facebook.com/sharer/sharer.php?u=https://covid.theoutlier.co.za"
+      target="_blank"><img src="/facebook.svg" alt="Share to Facebook" /></a
+    >
+  </div>
+
   <div class="cta">
     <div class="cta-inner">
       <div class="cta-text">
-        If you enjoyed this subscribe to our newsletter for more data stories.
-        The newsletter is sent out every two weeks.
+        Subscribe to our newsletter for more data stories. The newsletter is
+        sent out every two weeks.
       </div>
       <form
         class="js-cm-form"
@@ -421,6 +432,20 @@
   }
   .cta a {
     /* color: #1d9bf0; */
+  }
+  .social {
+    /* margin-top: 20px; */
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    color: #c4c4a3;
+  }
+  .social img {
+    transform: translate(0px, 3px);
+    width: 30px;
   }
   @media only screen and (max-width: 600px) {
     main {
