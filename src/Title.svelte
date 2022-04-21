@@ -1,7 +1,7 @@
 <div class="header">
   <div class="social">
     <a
-      href="https://twitter.com/intent/tweet?text=A%20visualisation%20of%20two%20years%20of%20Covid%20in%20South%20Africa.%20https://covid.theoutlier.co.za"
+      href="https://twitter.com/intent/tweet?text=A%20visualisation%20of%20two%20years%20of%20Covid%20in%20South%20Africa%20by%20@alastairotter%20.%20https://covid.theoutlier.co.za%20#ddj"
       target="_blank"><img src="/twitter.svg" alt="Share to Twitter" /></a
     >&nbsp;<a
       href="https://www.facebook.com/sharer/sharer.php?u=https://covid.theoutlier.co.za"
