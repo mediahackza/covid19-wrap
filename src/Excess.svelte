@@ -180,7 +180,7 @@
         y2={30}
       />
       <text class="x-axis" x={scaleX(dateParse('2020-07-15'))} y={height + 20}>
-        15 Jul 2020</text
+        15 Jul '20</text
       >
 
       <line
@@ -191,7 +191,7 @@
         y2={30}
       />
       <text class="x-axis" x={scaleX(dateParse('2021-01-10'))} y={height + 20}>
-        10 Jan 2021</text
+        10 Jan '21</text
       >
 
       <line
@@ -202,7 +202,7 @@
         y2={30}
       />
       <text class="x-axis" x={scaleX(dateParse('2021-07-12'))} y={height + 20}>
-        12 Jul 2021</text
+        12 Jul '21</text
       >
 
       <line
@@ -213,7 +213,7 @@
         y2={30}
       />
       <text class="x-axis" x={scaleX(dateParse('2021-12-25'))} y={height + 20}>
-        25 Dec 2021</text
+        25 Dec '21</text
       >
 
       <!-- Labels -->
@@ -353,6 +353,9 @@
   @media only screen and (max-width: 800px) {
     .legend-excess {
       grid-template-columns: 1fr;
+    }
+    .x-axis {
+      font-size: 0.7rem;
     }
   }
 </style>

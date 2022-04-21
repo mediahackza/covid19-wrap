@@ -312,4 +312,9 @@
     fill: none;
     stroke: #fff;
   }
+  @media only screen and (max-width: 600px) {
+    .legend-vaccinations {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>

@@ -7,15 +7,15 @@
   import Vaccinations from './Vaccinations.svelte'
   import { fills } from './fills.js'
   let dates = [
-    { date: '01-03-2020', month: 'Mar 2020' },
-    { date: '01-06-2020', month: 'Jun 2020' },
-    { date: '01-09-2020', month: 'Sep 2020' },
-    { date: '01-12-2020', month: 'Dec 2020' },
-    { date: '01-03-2021', month: 'Mar 2021' },
-    { date: '01-06-2021', month: 'Jun 2021' },
-    { date: '01-09-2021', month: 'Sep 2021' },
-    { date: '01-12-2021', month: 'Dec 2021' },
-    { date: '01-03-2022', month: 'Mar 2022' },
+    { date: '01-03-2020', month: "Mar'20" },
+    { date: '01-06-2020', month: "Jun'20" },
+    { date: '01-09-2020', month: "Sep'20" },
+    { date: '01-12-2020', month: "Dec'20" },
+    { date: '01-03-2021', month: "Mar'21" },
+    { date: '01-06-2021', month: "Jun'21" },
+    { date: '01-09-2021', month: "Sep'21" },
+    { date: '01-12-2021', month: "Dec'21" },
+    { date: '01-03-2022', month: "Mar'22" },
   ]
 
   // let notes = [
@@ -285,7 +285,6 @@
         >
         or email me:
         <a href="mailto:alastair@mediahack.co.za">alastair@mediahack.co.za</a>.
-        I'd love to hear from you.
       </div>
     </div>
   </div>
@@ -417,7 +416,8 @@
     background: rgb(54, 54, 54);
     border: solid 1px gray;
     color: #fff;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    width: 200px;
   }
   .cta button {
     background: #c4c4a3;
@@ -462,6 +462,9 @@
   @media only screen and (max-width: 600px) {
     main {
       width: 90%;
+    }
+    .dates {
+      font-size: 0.6rem;
     }
   }
 </style>
