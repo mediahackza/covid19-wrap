@@ -19,9 +19,10 @@
   $: scaleY = d3.scaleLinear().domain([0, 30000]).range([height, 0])
 
   $: line = d3
-    .line()
+    .area()
     .x((d) => scaleX(d.date))
-    .y((d) => scaleY(d.excess_deaths))
+    .y1((d) => scaleY(d.excess_deaths))
+    .y0((d) => scaleY(0))
 
   $: lineFill = d3
     .area()
@@ -32,10 +33,16 @@
   $: lineFillBottom = d3
     .area()
     .x((d) => scaleX(d.date))
-    .y0((d) => scaleY(d.excess_deaths))
+    .y0((d) => scaleY(d.prediction))
     .y1((d) => scaleY(0))
 
   $: linePrediction = d3
+    .area()
+    .x((d) => scaleX(d.date))
+    .y1((d) => scaleY(d.prediction))
+    .y0((d) => scaleY(0))
+
+  $: linePredictionLine = d3
     .line()
     .x((d) => scaleX(d.date))
     .y((d) => scaleY(d.prediction))
@@ -60,21 +67,30 @@
 </script>
 
 <div class="excess">
-  <div class="section-title">Calculating the Deathly Cost</div>
+  <div class="section-title">Calculating the Real Cost</div>
   <div class="section-sub-title">March 2020 &mdash; February 2022</div>
 
   <div class="legend legend-excess">
     <div />
     <div class="legend-block legend-no-border">
-      Officially, about 100,000 people died of Covid-related causes over the
-      past two years, however the real death toll may be as much as three times
-      that. The SA Medical Research Council (SAMRC) estimates that there were <a
-        href="https://www.samrc.ac.za/reports/report-weekly-deaths-south-africa"
-        target="_blank">as many as 300,000 "excess deaths"</a
-      > over the past two years. Excess deaths are the number of deaths recorded
-      above the typical numbers of deaths for a given year based on historical data
-      which the SAMRC calculates from the deaths recorded on the National Population
-      Register.
+      <p>
+        Officially, 100,000 people died of Covid-related causes over the past
+        two years. But in reality many more are likely to have died as a result
+        of the pandemic. The SA Medical Research Council estimates that there
+        were <a
+          href="https://www.samrc.ac.za/reports/report-weekly-deaths-south-africa"
+          target="_blank">just over 300,000 "excess deaths"</a
+        >, which is the number of deaths by natural causes above the number that
+        would be expected if there wasn’t a pandemic. Most of the excess deaths
+        are likely to have been Covid-related.
+      </p>
+
+      <p>
+        In the chart below the dotted white line shows the predicted number of
+        deaths from natural causes based on historical data, the dark pink area
+        shows deaths below the predicted number and the bright pink area
+        represents excess deaths.
+      </p>
     </div>
   </div>
 
@@ -132,15 +148,22 @@
       <path d={lineFillBottom(excess)} class="excess-area excess-area-bottom" />
       <path d={lineFill(excess)} class="excess-area" />
 
-      <path d={line(excess)} class="excess-area-line" />
+      <path d={line(excess)} class="excess-area-line" style="fill: hotpink;" />
 
-      <path d stroke-width="3" class="excess-lines excess-range" />
+      <path d stroke-width="13" class="excess-lines excess-range" />
+
+      <path
+        d={linePredictionLine(excess)}
+        stroke-width="3"
+        class="excess-lines excess-prediction-line"
+      />
 
       <path
         d={linePrediction(excess)}
         stroke-width="3"
         class="excess-lines excess-prediction"
       />
+
       <text x="40" y={scaleY(0) + 4} class="y-axis">0</text>
       <text x="40" y={scaleY(5000) + 4} class="y-axis">5,000</text>
       <text x="40" y={scaleY(10000) + 4} class="y-axis">10,000</text>
@@ -274,7 +297,8 @@
   }
   .excess-area {
     fill: rgba(255, 105, 180);
-    stroke: rgb(253, 0, 127);
+    fill: none;
+    /* stroke: rgb(253, 0, 127); */
     stroke-width: none;
   }
   .excess-area-bottom {
@@ -283,8 +307,8 @@
   .excess-area-line {
     /* fill: rgba(32, 32, 32, 0.37); */
     fill: none;
-    stroke: hotpink;
-    stroke-width: 4px;
+    /* stroke: hotpink; */
+    /* stroke-width: 4px; */
   }
   .excess-higher,
   .excess-lower {
@@ -302,11 +326,19 @@
     stroke-width: 1px;
   }
   .excess-prediction {
+    /* stroke-dasharray: 6, 3; */
+
+    stroke-width: 0px;
+    stroke: #fff;
+    fill: rgba(0, 0, 0, 0.692);
+    stroke: none;
+    /* stroke: none; */
+  }
+  .excess-prediction-line {
     stroke-dasharray: 6, 3;
-    stroke-width: 2px;
+    stroke-width: 5px;
     stroke: #fff;
     fill: none;
-    /* stroke: none; */
   }
   .legend-excess {
     margin-top: 30px;

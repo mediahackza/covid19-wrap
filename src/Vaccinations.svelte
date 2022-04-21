@@ -3,12 +3,17 @@
   let height = 300
   import * as d3 from 'd3'
   import { vaccinations } from './data/vaccinations.js'
+  import { vaxxed } from './data/vaxpercent.js'
   let dateParse = d3.timeParse('%d-%m-%Y')
   let dateParseTwo = d3.timeParse('%Y-%m-%d')
   let dateFormat = d3.timeFormat('%Y-%m-%d')
 
   vaccinations.forEach((d) => {
     d.date = dateParse(d.date)
+  })
+  vaxxed.forEach((d) => {
+    d.Date = dateParseTwo(d.Date)
+    d.date = d.Date
   })
 
   $: scaleX = d3
@@ -26,7 +31,15 @@
     .x((d) => scaleX(d.date))
     .y((d) => scaleY(d.average))
 
-  console.log(vaccinations)
+  $: scaleYVax = d3
+    .scaleLinear()
+    .domain([0, 50])
+    .range([height - 30, 30])
+
+  $: lineVaxxed = d3
+    .line()
+    .x((d) => scaleX(d.date))
+    .y((d) => scaleYVax(d['percent_total_population_fully_vaxxed']))
 </script>
 
 <div class="vaccinations-wrap">
@@ -35,10 +48,12 @@
 
   <div class="legend legend-vaccinations">
     <div class="legend-block">
-      South Africa's first Covid-19 vaccinations started on 18 February 2021
-      with the Sisonke trial, which used the Johnson & Johnson vaccine. The
-      official vaccination rollout started on 17 May 2021 with those over 60
-      years old.
+      South Africa started vaccinating healthcare workers on 18 February 2021
+      with the one-dose Johnson & Johnson (J&J) vaccine. The official
+      vaccination rollout to the public started on 17 May 2021 with people over
+      60 years old getting the two-dose Pfizer vaccine. By 19 April 2022, more
+      than 34-million doses of vaccine had been administered, both J&J and
+      Pfizer, and close to a third of the population was fully vaccinated.
     </div>
     <div class="legend-block legend-no-border">
       <div class="vaccinations-legend">
@@ -50,7 +65,7 @@
         <div>
           <div class="average-line" />
         </div>
-        <div>7-day Average vaccinations</div>
+        <div>7-day average vaccinations</div>
       </div>
     </div>
   </div>
@@ -206,6 +221,8 @@
       >
         24 Feb 2021
       </text>
+
+      <path d={lineVaxxed(vaxxed)} class="vax-line" />
     </svg>
   </div>
 </div>
@@ -290,5 +307,9 @@
   .date-labels {
     fill: #fff;
     font-size: 0.7rem;
+  }
+  .vax-line {
+    fill: none;
+    stroke: #fff;
   }
 </style>

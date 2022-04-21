@@ -6,14 +6,14 @@
 
 <div class="intro">
   <p>
-    <span class="firstcharacter">O</span>n 5 March 2020 South Africa recorded
-    the first postive Covid-19 case in the country. A few days later the first
-    Covid-related death was confirmed in KwaZulu-Natal. Over the next two years
-    South Africa and the world was ravaged by "coronavirus" and more than
-    100,000 deaths were directly attributed to coronavirus. But many more deaths
-    [NUMBER] are likely to be closer to the truth if we look at estimates of
-    "excess deaths" which show death numbers far in excess of predicted numbers
-    over this two year period (see below).
+    <span class="firstcharacter">O</span>n 5 March 2020, South Africa recorded
+    the first positive Covid-19 case. A few days later the first Covid-related
+    death was confirmed in KwaZulu-Natal. Over the next two years the world was
+    ravaged by SARS-CoV-2, or "coronavirus". In South Africa, more than 100,000
+    deaths were attributed to coronavirus. But the real death toll is likely to
+    be three times higher. Estimates of "excess deaths” show that deaths from
+    natural causes over this two-year period were far higher than expected (see
+    below).
   </p>
   <p>
     Over two years Media Hack collected <a
@@ -22,38 +22,46 @@
     > in South Africa.
   </p>
   <div class="credits">
-    <span class="bold">Design & Development</span>: Alastair Otter &nbsp;
-    <span class="bold">Data</span>: Media Hack Collective
+    <span class="bold">Design & Development</span>:
+    <a href="https://twitter.com/alastairotter" target="_blank"
+      >Alastair Otter</a
+    >
+    &nbsp;
+    <span class="bold">Data</span>:
+    <a href="https://mediahack.co.za" target="_blank">Media Hack Collective</a>
   </div>
 </div>
 
 <div class="four-waves">
-  <div class="section-title">The changing face of a pandemic</div>
+  <div class="section-title">The Changing Face of a Pandemic</div>
   <div class="section-sub-title">March 2020 &mdash; March 2022</div>
 </div>
 <div class="legend">
   <div class="legend-block legend-left">
     <div class="legend-text-title">Four Waves</div>
 
-    The first confirmed cases of coronavirus were reported in March and April
-    2020 and the first major wave started in June. In the chart below the
-    triangles represent a day's worth of data. The first large number of deaths
-    occured in late July through to September. The second wave peaked in late
-    January 2021 with the largest number of daily deaths in mid-January (the<span
-      class="highlight-pink">darker the pink color</span
-    >
-    the more deaths recorded on a day).
-
+    The first confirmed cases of coronavirus were reported in March 2020 and, as
+    the virus spread, the daily cases increased so that by June the country was
+    experiencing its first major wave.
     <p>
-      Daily deaths were more evenly distributed throughout the third wave than
-      in the second wave. This is very different to the fourth wave which saw
-      signficant testing and an increase in daily cases but relatively low
-      numbers of daily deaths.
+      In the chart below the triangles represent a day's worth of data, the
+      larger the triangle, the more confirmed cases were reported on that day.
+      The colour of the triangle represents the number of reported deaths on a
+      day. The <span class="highlight-pink">darker the pink</span>, the higher
+      the number of deaths.
     </p>
-    <p class="footnote">
-      Note: The dates for cases and deaths are the dates on which they were
-      reported by the dpartment of health and not cessarily the exact date of
-      test or death.
+    <p>
+      Daily Covid-related deaths in the first wave started to peak in late July
+      2020 and continued to be high until September. The second wave, which was
+      dominated by the Beta variant of the virus, peaked in late January 2021.
+      The largest number of daily deaths of the whole two-year period occurred
+      in January 2021.
+    </p>
+    <p>
+      Deaths were more evenly distributed throughout the third wave than in the
+      second wave. This is very different to the fourth wave which saw
+      significant testing and an increase in daily cases but relatively low
+      numbers of daily deaths.
     </p>
   </div>
   <div class="legend-block legend-center legend-no-border">
@@ -203,6 +211,11 @@
         done in a day.
       </div>
     </div>
+    <p class="footnote">
+      Note: The dates for cases and deaths are the dates on which they were
+      reported by the department of health and not necessarily the actual date
+      of test or death.
+    </p>
   </div>
   <div class="legend-block legend-right  legend-no-border">
     <!-- <div class="legend-title">&nbsp;</div> -->
@@ -240,9 +253,9 @@
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 0.9rem;
-    line-height: 1.3rem;
-    padding-bottom: 25px;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    padding-bottom: 50px;
     /* border-bottom: solid 1px gray; */
     /* margin-bottom: 25px; */
     font-family: 'Inter', Arial, Helvetica, sans-serif;
@@ -292,6 +305,7 @@
     padding-right: 8px;
     padding-left: 3px;
     color: #fff;
+    color: inherit;
     /* font-weight: 700; */
   }
   .triangle {

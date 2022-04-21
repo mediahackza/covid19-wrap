@@ -219,6 +219,56 @@
 
   <!-- Vaccinations -->
   <Vaccinations />
+
+  <div class="cta">
+    <div class="cta-inner">
+      <div class="cta-text">
+        If you enjoyed this subscribe to our newsletter for more data stories.
+        The newsletter is sent out every two weeks.
+      </div>
+      <form
+        class="js-cm-form"
+        id="subForm"
+        action="https://www.createsend.com/t/subscribeerror?description="
+        method="post"
+        data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1AAA5D68D26FD222ECE64C6A563A9BF339160E857807618A1E6614A43A746C409629B4C258EC846CC82657DA43FB662EAD"
+      >
+        <input
+          autocomplete="Email"
+          aria-label="Email"
+          class="js-cm-email-input qa-input-email"
+          id="fieldEmail"
+          maxlength="200"
+          name="cm-jtdujtk-jtdujtk"
+          required=""
+          type="email"
+          placeholder="Email Address"
+        /><input
+          aria-label="Signup source"
+          id="fieldjthyqu"
+          maxlength="200"
+          name="cm-f-jthyqu"
+          type="hidden"
+          value="Covid Wrap"
+        /><button type="submit">Subscribe</button>
+      </form>
+      <script
+        type="text/javascript"
+        src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+      <div class="cta-text">
+        Send comments, questions to <a href="mailto:info@mediahack.co.za"
+          >info@mediahack.co.za</a
+        >.<br />Follow us:
+        <a href="https://twitter.com/outlierafrica"
+          ><img src="/twitter.svg" alt="twitter-link" /> @outlierafrica</a
+        >
+        &nbsp;
+        <a href="https://twitter.com/alastairotter"
+          ><img src="/twitter.svg" alt="twitter-link" /> @alastairotter</a
+        >
+      </div>
+    </div>
+  </div>
 </main>
 
 <style>
@@ -320,7 +370,56 @@
     stroke-width: 0.5px;
     shape-rendering: crispEdges;
   }
-
+  .cta {
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    padding-bottom: 50px;
+    border-top: solid 1px gray;
+    padding-top: 0px;
+    font-weight: 400;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: gray;
+  }
+  .cta-inner {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cta-text {
+    margin-bottom: 20px;
+    line-height: 1.3rem;
+    margin-top: 20px;
+    line-height: 2rem;
+  }
+  .cta input {
+    background: rgb(54, 54, 54);
+    border: solid 1px gray;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  .cta button {
+    background: #c4c4a3;
+    border: none;
+    color: #000;
+    text-transform: uppercase;
+    margin-left: 10px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  .cta button:hover {
+    background: #dcdcb4;
+  }
+  .cta img {
+    width: 15px;
+  }
+  .cta a {
+    /* color: #1d9bf0; */
+  }
   @media only screen and (max-width: 600px) {
     main {
       width: 90%;

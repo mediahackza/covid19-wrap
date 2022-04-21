@@ -78,18 +78,19 @@
 </script>
 
 <div class="maps-outer-wrap">
-  <div class="section-title">Countrywide Deaths</div>
+  <div class="section-title">How the Provinces were Affected</div>
   <div class="section-sub-title">March 2020 &mdash; February 2022</div>
   <div class="map-legend">
     <div class="legend-block map-legend-left">
-      The first confirmed Covid case was recorded in KwaZulu-Natal in April 2020
-      but it wasn't until June and July that the number of daily deaths started
-      to rise, peaking in August 2020.The second and third waves had a major
-      impact on the Eastern and Western Cape as well as Gauteng.
+      It wasn't until June 2020, three months after the first Covid-19 case was
+      reported in KwaZulu-Natal, that the number of daily deaths started to
+      rise, first in the Western Cape, then the Eastern Cape and Gauteng,
+      eventually peaking in August 2020. The second and third waves also had a
+      major impact on those three provinces and KwaZulu-Natal.
     </div>
     <div class="legend-block map-legend-right  legend-no-border">
       Provinces with more than 100 confirmed coronavirus-related deaths per
-      month
+      month.
       <div class="map-legend-bar">
         <div class="bar" style="background: #2B2B2B;" />
         <div class="bar" style="background: {fills2[0]};" />
